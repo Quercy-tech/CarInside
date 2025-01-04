@@ -7,15 +7,27 @@
 import Foundation
 import OpenAI
 
+func loadAPIKey() -> String? {
+    guard let infoDictionary: [String: Any] = Bundle.main.infoDictionary else { return nil }
+    guard let mySecretApiKey: String = infoDictionary["OPENAI_API_TOKEN"] as? String else { return nil }
+    print("Here's your api key value -> \(mySecretApiKey)")
+    return mySecretApiKey
+}
+
+
 class ChatController: ObservableObject {
     @Published var displayedMessages: [Message] = []
     var messages: [Message] = []
+    let openAI = OpenAI(apiToken: loadAPIKey()!)
+//    let openAI = OpenAI(apiToken: "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")
     
-    let openAI = OpenAI(apiToken: "sk-None-MjKISt8WZARD4Fr4qdmyT3BlbkFJEUJs1amvPKuiwHBwn7c0")
     
-    let initialSetupMessage = Message(content: "You are a friendly and knowledgeable car mechanic. Provide detailed and helpful answers to car-related questions. Your name is Bovdyr.", isUser: false)
+    
+    
+    let initialSetupMessage = Message(content: "You are a friendly and knowledgeable car mechanic. Provide detailed and helpful answers to car-related questions. Your name is Mechanicus Maximus.", isUser: false)
     
     init() {
+        
         self.messages.append(initialSetupMessage)
     }
     
@@ -32,7 +44,7 @@ class ChatController: ObservableObject {
         
         let query = ChatQuery(
             messages: allMessages.map({.init(role: $0.isUser ? .user : .system, content: $0.content)!}),
-            model: .gpt3_5Turbo
+            model: .gpt4_o
         )
         
         openAI.chatsStream(query: query) { result in

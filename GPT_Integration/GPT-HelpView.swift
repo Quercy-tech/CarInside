@@ -14,7 +14,7 @@ struct ChatGPTView: View {
     
     var body: some View {
         VStack {
-            Header(text: "Chat with specialist", subtext: "Chat uses specialised ChatGPT 3.5 turbo. To copy text, long press on the bubble")
+            Header(text: "Chat with specialist", subtext: "Chat uses specialised ChatGPT 4o. To copy text, long press on the bubble")
             
             ScrollViewReader { proxy in
                 ScrollView {

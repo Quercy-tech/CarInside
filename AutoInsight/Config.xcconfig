@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  AutoInsight
+//
+//  Created by Quercy on 5/1/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+OPENAI_API_TOKEN = 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

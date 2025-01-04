@@ -107,6 +107,7 @@
       }
     },
     "Car companies" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -220,6 +221,7 @@
       }
     },
     "Chat uses specialised ChatGPT 3.5 turbo. To copy text, long press on the bubble" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
@@ -234,6 +236,9 @@
           }
         }
       }
+    },
+    "Chat uses specialised ChatGPT 4o. To copy text, long press on the bubble" : {
+
     },
     "Chat with specialist" : {
       "localizations" : {
