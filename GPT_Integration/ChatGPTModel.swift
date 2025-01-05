@@ -19,11 +19,7 @@ class ChatController: ObservableObject {
     @Published var displayedMessages: [Message] = []
     var messages: [Message] = []
     let openAI = OpenAI(apiToken: loadAPIKey()!)
-//    let openAI = OpenAI(apiToken: "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")
-    
-    
-    
-    
+ 
     let initialSetupMessage = Message(content: "You are a friendly and knowledgeable car mechanic. Provide detailed and helpful answers to car-related questions. Your name is Mechanicus Maximus.", isUser: false)
     
     init() {
