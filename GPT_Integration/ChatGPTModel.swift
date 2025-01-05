@@ -10,7 +10,6 @@ import OpenAI
 func loadAPIKey() -> String? {
     guard let infoDictionary: [String: Any] = Bundle.main.infoDictionary else { return nil }
     guard let mySecretApiKey: String = infoDictionary["OPENAI_API_TOKEN"] as? String else { return nil }
-    print("Here's your api key value -> \(mySecretApiKey)")
     return mySecretApiKey
 }
 
