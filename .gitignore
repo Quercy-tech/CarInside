@@ -1,5 +1,5 @@
-# Ignore Config.xconfig
-AutoInsight/Config.xconfig
+# Ignore Config.xcconfig
+AutoInsight/Config.xcconfig
 
 # Ignore Info.plist
 AutoInsight/Info.plist
