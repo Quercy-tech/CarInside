@@ -62,9 +62,3 @@
   <span style="font-size: 1.2rem;">Whether you’re shopping for your next ride, deep-diving into car specs, or just having fun exploring, <span class="animated-text">CarInside</span> is your perfect companion. Get ready to rev your engines and dive into the world of cars!</span>
 </p>
 
-<p align="center">
-  <a href="https://apps.apple.com/ua/app/carinside/id6636482698">
-    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="200">
-  </a>
-</p>
-
